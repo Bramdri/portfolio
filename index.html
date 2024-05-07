@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <script defer src="script.js"></script>
+    <title>Bram Van Ballaert - Portfolio</title>
+</head>
+<body>
+    
+    <div class="menu">
+        <div class="button" id="button-7">
+            <a href="acting.html">Acting</a>
+          </div>
+          <div class="button" id="button-7">
+            <a href="projects.html">Projects</a>
+          </div>
+          <div class="button" id="button-7">
+            <a href="#contact">Contact us</a>
+          </div>
+      </div>
+      <div class="menu__toggler"><span></span></div>
+    <header>
+        
+        <div class="container">
+            <h1>Bram Van Ballaert</h1>
+        </div>
+    </header>
+
+    <section id="about" class="center-content">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="intro">Welcome to my portfolio! Here's a glimpse into my journey.</p>
+            <div class="about-details">
+                <div class="about-text">
+                    <h3>Acting:</h3>
+                    <p>I have been passionate about acting since a young age. Over the years, I've portrayed various roles in theater performances and TV appearances.</p>
+                    <p>Some notable roles include The Butcher of the Royal Palace, Damien, Odysseus, and Zeus.</p>
+                </div>
+                <div class="about-image">
+                    <img src="acting.jpg" alt="Acting Image">
+                </div>
+            </div>
+            <div class="about-details reversed">
+                <div class="about-text">
+                    <h3>Game Development:</h3>
+                    <p>My interest in computers and video games led me to explore game development. Despite initial challenges, I founded Feralstorm Entertainment and worked on projects like Donut Simulator and World of Wonders.</p>
+                </div>
+                <div class="about-image">
+                    <img src="game-dev.png" alt="Game Development Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="education" class="center-content">
+        <div class="container">
+            <h2>Education</h2>
+    
+            <div class="education-timeline">
+                <div class="education-event">
+                    <div class="education-year">2019 - Present</div>
+                    <div class="education-details">
+                        <h3>High School Diploma</h3>
+                        <p>SJABI, Puurs, Belgium</p>
+                        <p>BA Zandpoort, Mechelen (Malines), Belgium</p>
+                    </div>
+                </div>
+    
+                <div class="education-event">
+                    <div class="education-year">2015 - Present</div>
+                    <div class="education-details">
+                        <h3>Acting Training</h3>
+                        <p>Started acting at the age of 8, learned from professional actors and actresses.</p>
+                    </div>
+                </div>
+    
+                <div class="education-event">
+                    <div class="education-year">2020 - Present</div>
+                    <div class="education-details">
+                        <h3>Self-Taught Game Development</h3>
+                        <p>Learning Lua, starting my own game studios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="center-content">
+        <div class="container">
+            <h2>Contact</h2>
+    
+            <div class="contact-form">
+                <form id="contactForm" action="#" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            &copy; 2024 Bram Van Ballaert
+            
+        </div>
+    </footer>
+</body>
+</html>

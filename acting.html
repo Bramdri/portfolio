@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+
+    <title>Bram Van Ballaert - Acting</title>
+</head>
+<body>
+
+    <div class="menu">
+        <div class="button" id="button-7">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="button" id="button-7">
+            <a href="projects.html">Projects</a>
+          </div>
+          <div class="button" id="button-7">
+            <a href="index.html#contact">Contact us</a>
+          </div>
+      </div>
+      <div class="menu__toggler"><span></span></div>
+
+    <header>
+        <div class="container">
+            <h1>Bram Van Ballaert</h1>
+        </div>
+        <br>
+        <div id="loginPanel" style="display: none;">
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="password" placeholder="Password">
+                <button type="button" onclick="login()">Login</button>
+            </form>
+        </div>
+        <button id="openCreateEventPanelBtn" style="display: none;" onclick="openCreateEventPanel()">Create Event</button>
+    </header>
+
+    <section id="calendar" class="center-content">
+        <div class="container">
+            <div class="calendar-header">
+                <div class="controls">
+                    <button class="control-btn" onclick="prevMonth()">&lt;</button>
+                    <button class="control-btn" onclick="nextMonth()">&gt;</button>
+                </div>
+                <div class="month-year" id="monthYear"></div>
+            </div>
+            <table class="calendar-table" id="calendarBody"></table>
+            <div id="createEventPanel" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" onclick="closeCreateEventPanel()">&times;</span>
+                    <h2>Create New Event</h2>
+                    <form id="eventForm">
+                        <label for="eventName">Event Name:</label>
+                        <input type="text" id="eventName" required>
+                        <label for="eventDetails">Event Details:</label>
+                        <textarea id="eventDetails" required></textarea>
+                        <label for="eventDates">Event Dates:</label>
+                        <input type="text" id="eventDates" placeholder="MM/DD/YYYY" required>
+                        <label for="eventLocation">Event Location:</label>
+                        <input type="text" id="eventLocation" required>
+                        <label for="eventTime">Event Time:</label>
+                        <input type="text" id="eventTime" placeholder="HH:mm AM/PM" required>
+                        <button type="button" onclick="submitEvent()">Create Event</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="event-details">
+                <img class="event-image" src="#" alt="Event Image">
+                <div class="event-text">
+                    <h3>Event Name</h3>
+                    <p class="details">Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="dates">Dates: MM/DD/YYYY</p>
+                    <p class="location">Location: City, Country</p>
+                    <p class="time">Time: HH:mm AM/PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            &copy; 2024 Bram Van Ballaert
+        </div>
+    </footer>
+
+</body>
+</html>
