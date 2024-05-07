@@ -118,7 +118,12 @@ button:hover {
     background-color: #2980b9;
 }
 
+#calendar {
+  overflow-x: auto;
+}
+
 .calendar-header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -173,6 +178,22 @@ button:hover {
 .calendar-table td:hover {
     background-color: #3498db;
     color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .calendar-table {
+      min-width: unset; /* Remove the minimum width on smaller screens */
+      width: 100%; /* Set the width to 100% on smaller screens */
+  }
+
+  .calendar-header {
+      flex-direction: column; /* Stack controls and month/year vertically */
+      align-items: center;
+  }
+
+  .controls {
+      margin-bottom: 10px; /* Add space below the controls */
+  }
 }
 
 .marked {
